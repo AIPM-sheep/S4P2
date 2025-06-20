@@ -9,7 +9,7 @@
 
 * **接口路径**: `/`
 * **请求方法**: `GET`
-* **公开网址 (URL)**: `https://s4p2-v7th.onrender.com/`
+* **公开网址 (URL)**: `https://s4p2-d7nh.onrender.com/`
 * **请求参数**: 无
 * **成功返回示例**: `Hello, World!`
 * **返回状态码**: `200`
