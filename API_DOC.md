@@ -8,18 +8,18 @@
 
 ### 1. 获取特定学习路径下的所有资源
 
-根据提供的路径标识符（如 `web-full-stack`），获取该学习路径下的所有教学资源节点，并按学习顺序排列。
+根据提供的路径标识符（如「web-full-stack」），获取该学习路径下的所有教学资源节点，并按学习顺序排列。
 
-* **接口路径**: `/api/roadmaps/{roadmap_slug}`
+* **接口路径**：`/api/roadmaps/{roadmap_slug}`
     * *路径参数 (Path Parameter)*:
-        * `roadmap_slug` (string, required): 学习路径的唯一标识。例如: `web-full-stack`.
+        * `roadmap_slug` (string, required): 学习路径的唯一标识。例如：「web-full-stack」
 
-* **请求方法**: `GET`
+* **请求方法**：`GET`
 
-* **请求参数**: 无
+* **请求参数**：无
 
 * **成功返回示例 (Success 200 OK)**:
-    * 当 `roadmap_slug` 为 `web-full-stack` 时，返回的数据结构如下：
+    * 当「roadmap_slug」为「web-full-stack」时，返回的数据结构如下：
 
     ```json
     {
@@ -64,7 +64,7 @@
           "resource_url": "[https://zh-hans.react.dev/](https://zh-hans.react.dev/)",
           "resource_type": "官方文档",
           "reason": "由React团队维护的权威教程，全面讲解组件、Hooks、路由等关键概念，具有中文版"
-        }，
+        },
         {
           "step": 6,
           "skill": "Node.js",
@@ -72,7 +72,7 @@
           "resource_url": "[https://nodejs.org/en/docs/](https://nodejs.org/en/docs/)",
           "resource_type": "官方文档",
           "reason": "Node.js官方权威文档，涵盖所有核心模块和API，是学习服务器端JS的必备参考"
-        }，
+        },
         {
           "step": 6,
           "skill": "Express.js",
@@ -80,7 +80,7 @@
           "resource_url": "[https://nodejs.org/en/docs/](https://nodejs.org/en/docs/)",
           "resource_type": "官方文档",
           "reason": "官方指南提供详尽示例，介绍Express核心功能和中间件用法，支持多语言"
-        }，
+        },
         {
           "step": 7,
           "skill": "SQL",
@@ -88,7 +88,7 @@
           "resource_url": "[http://www.runoob.com/sql/sql-tutorial.html](http://www.runoob.com/sql/sql-tutorial.html)",
           "resource_type": "文字教程",
           "reason": "标准化SQL语言教程，系统介绍关系型数据库基础操作，包含众多例子，新手易上手"
-        }，
+        },
       ]
     }
    ```
