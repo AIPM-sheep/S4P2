@@ -182,8 +182,8 @@ mock_db = {
                         "reason": "理解LangGraph如何用图（Graph）来定义循环和状态，掌握其作为“状态机”的本质。"
                     },
                     {
-                        "resource_name": "Bilibili - \"手把手教你用LangGraph搭建Agent\" by 王树先生",
-                        "resource_url": "https://www.bilibili.com/video/BV1xZ42187k4/",
+                        "resource_name": "Bilibili - \"LangGraph快速入门与智能体开发实战\" by 九天Hector",
+                        "resource_url": "https://www.bilibili.com/video/BV1Kx3CzyE6Q?vd_source=14a017f1942e66549c878a8ddcc8bc2b",
                         "resource_type": "视频教程",
                         "reason": "优秀的中文社区实战教程，从零开始，用中文语境讲解，非常适合国内学习者快速上手。"
                     }
