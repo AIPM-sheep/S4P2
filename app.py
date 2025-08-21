@@ -762,251 +762,231 @@ mock_db = {
         "roadmap_title": "后端工程师",
         "stages": [
             {
-                "steps": [
+                "step": 1,
+                "skill": "Python 高级编程 (OOP, 装饰器)",
+                "prerequisites": [],
+                "resources": [
                     {
-                        "step": 1,
-                        "skill": "Python 高级编程 (OOP, 装饰器)",
-                        "prerequisites": [],
-                        "resources": [
-                            {
-                                "resource_name": "Real Python: OOP in Python 3",
-                                "resource_url": "https://realpython.com/python3-object-oriented-programming/",
-                                "resource_type": "深度文章/教程系列",
-                                "reason": "全球公认的高质量教程，用海量代码示例和图解透彻讲解Python OOP。"
-                            },
-                            {
-                                "resource_name": "廖雪峰的Python教程-面向对象高级编程",
-                                "resource_url": "https://www.liaoxuefeng.com/wiki/1016959663602400/1017496031529184",
-                                "resource_type": "中文在线教程",
-                                "reason": "国内广受好评的免费教程，简明扼要，直击Python高级OOP特性的重点。"
-                            }
-                        ]
+                        "resource_name": "Real Python: OOP in Python 3",
+                        "resource_url": "https://realpython.com/python3-object-oriented-programming/",
+                        "resource_type": "深度文章/教程系列",
+                        "reason": "全球公认的高质量教程，用海量代码示例和图解透彻讲解Python OOP。"
                     },
                     {
-                        "step": 2,
-                        "skill": "数据结构与算法 (Data Structures & Algorithms)",
-                        "prerequisites": ["Python 高级编程 (OOP, 装饰器)"],
-                        "resources": [
-                            {
-                                "resource_name": "《Hello 算法》",
-                                "resource_url": "https://github.com/krahets/hello-algo",
-                                "resource_type": "开源电子书/动画图解",
-                                "reason": "国产优秀开源项目，通过动画图解生动展示算法原理，对国内学习者极其友好。"
-                            },
-                            {
-                                "resource_name": "NeetCode.io",
-                                "resource_url": "https://neetcode.io/",
-                                "resource_type": "互动教程/刷题平台",
-                                "reason": "LeetCode题目的精华路线图，提供清晰图解和多语言视频题解，实战性极强。"
-                            }
-                        ]
-                    },
-                    {
-                        "step": 3,
-                        "skill": "版本控制 (Git 核心工作流)",
-                        "prerequisites": [],
-                        "resources": [
-                            {
-                                "resource_name": "Learn Git Branching",
-                                "resource_url": "https://learngitbranching.js.org/?locale=zh_CN",
-                                "resource_type": "互动教程/可视化学习",
-                                "reason": "革命性的可视化学习工具，通过网页虚拟操作，让分支等核心概念变得异常直观。"
-                            },
-                            {
-                                "resource_name": "Pro Git (中文版)",
-                                "resource_url": "https://git-scm.com/book/zh/v2",
-                                "resource_type": "官方书籍/权威文档",
-                                "reason": "Git官方权威“圣经”，内容全面、严谨、深入，任何希望精通Git的工程师都应通读。"
-                            }
-                        ]
+                        "resource_name": "廖雪峰的Python教程-面向对象高级编程",
+                        "resource_url": "https://www.liaoxuefeng.com/wiki/1016959663602400/1017496031529184",
+                        "resource_type": "中文在线教程",
+                        "reason": "国内广受好评的免费教程，简明扼要，直击Python高级OOP特性的重点。"
                     }
                 ]
             },
             {
-                "steps": [
+                "step": 2,
+                "skill": "数据结构与算法 (Data Structures & Algorithms)",
+                "prerequisites": ["Python 高级编程 (OOP, 装饰器)"],
+                "resources": [
                     {
-                        "step": 4,
-                        "skill": "RESTful API 设计原则",
-                        "prerequisites": [],
-                        "resources": [
-                            {
-                                "resource_name": "Microsoft - RESTful web API design",
-                                "resource_url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design",
-                                "resource_type": "官方最佳实践文档",
-                                "reason": "业界关于RESTful API设计的最佳实践指南之一，构建专业API的必备参考。"
-                            },
-                            {
-                                "resource_name": "阮一峰的网络日志 - RESTful API 设计指南",
-                                "resource_url": "https://www.ruanyifeng.com/blog/2014/05/restful_api.html",
-                                "resource_type": "中文博客文章",
-                                "reason": "国内后端开发者的启蒙读物，用通俗易懂的语言快速建立对RESTful风格的理解。"
-                            }
-                        ]
+                        "resource_name": "《Hello 算法》",
+                        "resource_url": "https://github.com/krahets/hello-algo",
+                        "resource_type": "开源电子书/动画图解",
+                        "reason": "国产优秀开源项目，通过动画图解生动展示算法原理，对国内学习者极其友好。"
                     },
                     {
-                        "step": 5,
-                        "skill": "Web 框架 (FastAPI 或 Flask)",
-                        "prerequisites": ["Python 高级编程 (OOP, 装饰器)", "RESTful API 设计原则"],
-                        "resources": [
-                            {
-                                "resource_name": "FastAPI Official Tutorial",
-                                "resource_url": "https://fastapi.tiangolo.com/tutorial/",
-                                "resource_type": "官方文档/互动教程",
-                                "reason": "开源项目文档的典范，手把手教你构建完整API，实战性无出其右。"
-                            },
-                            {
-                                "resource_name": "The Flask Mega-Tutorial by Miguel Grinberg",
-                                "resource_url": "https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world",
-                                "resource_type": "博客教程系列",
-                                "language": "EN",
-                                "reason": "无法绕过的Flask经典教程，带领学习者从零构建一个功能完整的博客应用。"
-                            }
-                        ]
+                        "resource_name": "NeetCode.io",
+                        "resource_url": "https://neetcode.io/",
+                        "resource_type": "互动教程/刷题平台",
+                        "reason": "LeetCode题目的精华路线图，提供清晰图解和多语言视频题解，实战性极强。"
                     }
                 ]
             },
             {
-                "steps": [
+                "step": 3,
+                "skill": "版本控制 (Git 核心工作流)",
+                "prerequisites": [],
+                "resources": [
                     {
-                        "step": 6,
-                        "skill": "关系型数据库 (PostgreSQL) 与 SQL 进阶",
-                        "prerequisites": [],
-                        "resources": [
-                            {
-                                "resource_name": "PGExercises",
-                                "resource_url": "https://pgexercises.com/",
-                                "resource_type": "互动练习平台",
-                                "language": "EN",
-                                "reason": "“做中学”提高SQL技能最有效的方法之一，提供难度递增的在线练习和即时反馈。"
-                            },
-                            {
-                                "resource_name": "The Art of PostgreSQL",
-                                "resource_url": "https://theartofpostgresql.com/",
-                                "resource_type": "在线书籍/深度指南",
-                                "language": "EN",
-                                "reason": "深度挖掘PG能力的免费在线书籍，讲解如何写出更高效、更优雅的SQL。"
-                            }
-                        ]
+                        "resource_name": "Learn Git Branching",
+                        "resource_url": "https://learngitbranching.js.org/?locale=zh_CN",
+                        "resource_type": "互动教程/可视化学习",
+                        "reason": "革命性的可视化学习工具，通过网页虚拟操作，让分支等核心概念变得异常直观。"
                     },
                     {
-                        "step": 7,
-                        "skill": "NoSQL 数据库 (MongoDB)",
-                        "prerequisites": [],
-                        "resources": [
-                            {
-                                "resource_name": "MongoDB University - M001: MongoDB Basics",
-                                "resource_url": "https://learn.mongodb.com/courses/m001-mongodb-basics",
-                                "resource_type": "官方免费课程/互动实验",
-                                "language": "EN",
-                                "reason": "官方权威入门课程，结合视频、测验和云端实验，动手掌握核心概念。"
-                            },
-                            {
-                                "resource_name": "freeCodeCamp - MongoDB Full Course",
-                                "resource_url": "https://www.youtube.com/watch?v=E-1xI85Zog8",
-                                "resource_type": "视频课程",
-                                "language": "EN",
-                                "reason": "提供了对MongoDB更全面的讲解，深入数据建模、索引策略和性能优化等高级主题。"
-                            }
-                        ]
-                    },
-                    {
-                        "step": 8,
-                        "skill": "缓存技术 (Redis)",
-                        "prerequisites": ["数据结构与算法 (Data Structures & Algorithms)"],
-                        "resources": [
-                            {
-                                "resource_name": "《Redis 设计与实现》Read the Docs",
-                                "resource_url": "https://redisbook.readthedocs.io/en/latest/",
-                                "resource_type": "开源在线书籍",
-                                "language": "CN/EN",
-                                "reason": "国产经典之作，从源码层面深度剖析Redis内部原理，助你从“会用”到“理解”。"
-                            }
-                        ]
+                        "resource_name": "Pro Git (中文版)",
+                        "resource_url": "https://git-scm.com/book/zh/v2",
+                        "resource_type": "官方书籍/权威文档",
+                        "reason": "Git官方权威“圣经”，内容全面、严谨、深入，任何希望精通Git的工程师都应通读。"
                     }
                 ]
             },
             {
-                "steps": [
+                "step": 4,
+                "skill": "RESTful API 设计原则",
+                "prerequisites": [],
+                "resources": [
                     {
-                        "step": 9,
-                        "skill": "容器化 (Docker & Docker Compose)",
-                        "prerequisites": [],
-                        "resources": [
-                            {
-                                "resource_name": "Docker — From Zero to Hero (Prakhar Srivastav)",
-                                "resource_url": "https://prakhar.me/docker-curriculum/",
-                                "resource_type": "互动教程/博客系列",
-                                "language": "EN",
-                                "reason": "从零开始的Docker课程，通过实际操作讲解核心概念，非常适合初学者。"
-                            },
-                            {
-                                "resource_name": "《Docker — 从入门到实践》",
-                                "resource_url": "https://vuepress.mirror.docker-practice.com/",
-                                "resource_type": "开源中文书籍",
-                                "language": "CN",
-                                "reason": "国内最受欢迎的Docker开源书籍之一，内容全面，覆盖了从基础到实践的方方面面。"
-                            }
-                        ]
+                        "resource_name": "Microsoft - RESTful web API design",
+                        "resource_url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design",
+                        "resource_type": "官方最佳实践文档",
+                        "reason": "业界关于RESTful API设计的最佳实践指南之一，构建专业API的必备参考。"
                     },
                     {
-                        "step": 10,
-                        "skill": "CI/CD (GitHub Actions)",
-                        "prerequisites": ["版本控制 (Git 核心工作流)", "容器化 (Docker & Docker Compose)"],
-                        "resources": [
-                            {
-                                "resource_name": "GitHub Actions Documentation",
-                                "resource_url": "https://docs.github.com/en/actions",
-                                "resource_type": "官方文档",
-                                "language": "EN/CN",
-                                "reason": "学习任何技术的最佳起点，官方文档最权威、最准确。"
-                            },
-                            {
-                                "resource_name": "CI/CD with GitHub Actions - Full Course",
-                                "resource_url": "https://www.youtube.com/watch?v=R8_veQiY-c8",
-                                "resource_type": "视频课程",
-                                "language": "EN",
-                                "reason": "freeCodeCamp出品的免费课程，系统性地讲解了如何使用GitHub Actions构建完整的CI/CD流水线。"
-                            }
-                        ]
+                        "resource_name": "阮一峰的网络日志 - RESTful API 设计指南",
+                        "resource_url": "https://www.ruanyifeng.com/blog/2014/05/restful_api.html",
+                        "resource_type": "中文博客文章",
+                        "reason": "国内后端开发者的启蒙读物，用通俗易懂的语言快速建立对RESTful风格的理解。"
                     }
                 ]
             },
             {
-                "steps": [
+                "step": 5,
+                "skill": "Web 框架 (FastAPI 或 Flask)",
+                "prerequisites": ["Python 高级编程 (OOP, 装饰器)", "RESTful API 设计原则"],
+                "resources": [
                     {
-                        "step": 11,
-                        "skill": "日志 (Logging)",
-                        "prerequisites": ["Web 框架 (FastAPI 或 Flask)"],
-                        "resources": [
-                            {
-                                "resource_name": "Python Logging HOWTO",
-                                "resource_url": "https://docs.python.org/3/howto/logging.html",
-                                "resource_type": "官方文档/指南",
-                                "language": "EN",
-                                "reason": "Python官方的日志指南，是理解和正确使用logging模块的最权威资料。"
-                            }
-                        ]
+                        "resource_name": "FastAPI Official Tutorial",
+                        "resource_url": "https://fastapi.tiangolo.com/tutorial/",
+                        "resource_type": "官方文档/互动教程",
+                        "reason": "开源项目文档的典范，手把手教你构建完整API，实战性无出其右。"
                     },
                     {
-                        "step": 12,
-                        "skill": "监控 (Prometheus & Grafana)",
-                        "prerequisites": ["Web 框架 (FastAPI 或 Flask)", "容器化 (Docker & Docker Compose)"],
-                        "resources": [
-                            {
-                                "resource_name": "Prometheus - Overview",
-                                "resource_url": "https://prometheus.io/docs/introduction/overview/",
-                                "resource_type": "官方文档",
-                                "language": "EN",
-                                "reason": "Prometheus官方文档，快速理解其架构和核心概念。"
-                            },
-                            {
-                                "resource_name": "Grafana Fundamentals",
-                                "resource_url": "https://grafana.com/tutorials/grafana-fundamentals/",
-                                "resource_type": "官方教程",
-                                "language": "EN",
-                                "reason": "Grafana官方的基础教程，手把手教你创建第一个Dashboard。"
-                            }
-                        ]
+                        "resource_name": "The Flask Mega-Tutorial by Miguel Grinberg",
+                        "resource_url": "https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world",
+                        "resource_type": "博客教程系列",
+                        "language": "EN",
+                        "reason": "无法绕过的Flask经典教程，带领学习者从零构建一个功能完整的博客应用。"
+                    }
+                ]
+            },
+            {
+                "step": 6,
+                "skill": "关系型数据库 (PostgreSQL) 与 SQL 进阶",
+                "prerequisites": [],
+                "resources": [
+                    {
+                        "resource_name": "PGExercises",
+                        "resource_url": "https://pgexercises.com/",
+                        "resource_type": "互动练习平台",
+                        "language": "EN",
+                        "reason": "“做中学”提高SQL技能最有效的方法之一，提供难度递增的在线练习和即时反馈。"
+                    },
+                    {
+                        "resource_name": "The Art of PostgreSQL",
+                        "resource_url": "https://theartofpostgresql.com/",
+                        "resource_type": "在线书籍/深度指南",
+                        "language": "EN",
+                        "reason": "深度挖掘PG能力的免费在线书籍，讲解如何写出更高效、更优雅的SQL。"
+                    }
+                ]
+            },
+            {
+                "step": 7,
+                "skill": "NoSQL 数据库 (MongoDB)",
+                "prerequisites": [],
+                "resources": [
+                    {
+                        "resource_name": "MongoDB University - M001: MongoDB Basics",
+                        "resource_url": "https://learn.mongodb.com/courses/m001-mongodb-basics",
+                        "resource_type": "官方免费课程/互动实验",
+                        "language": "EN",
+                        "reason": "官方权威入门课程，结合视频、测验和云端实验，动手掌握核心概念。"
+                    },
+                    {
+                        "resource_name": "freeCodeCamp - MongoDB Full Course",
+                        "resource_url": "https://www.youtube.com/watch?v=E-1xI85Zog8",
+                        "resource_type": "视频课程",
+                        "language": "EN",
+                        "reason": "提供了对MongoDB更全面的讲解，深入数据建模、索引策略和性能优化等高级主题。"
+                    }
+                ]
+            },
+            {
+                "step": 8,
+                "skill": "缓存技术 (Redis)",
+                "prerequisites": ["数据结构与算法 (Data Structures & Algorithms)"],
+                "resources": [
+                    {
+                        "resource_name": "《Redis 设计与实现》Read the Docs",
+                        "resource_url": "https://redisbook.readthedocs.io/en/latest/",
+                        "resource_type": "开源在线书籍",
+                        "language": "CN/EN",
+                        "reason": "国产经典之作，从源码层面深度剖析Redis内部原理，助你从“会用”到“理解”。"
+                    }
+                ]
+            },
+            {
+                "step": 9,
+                "skill": "容器化 (Docker & Docker Compose)",
+                "prerequisites": [],
+                "resources": [
+                    {
+                        "resource_name": "Docker — From Zero to Hero (Prakhar Srivastav)",
+                        "resource_url": "https://prakhar.me/docker-curriculum/",
+                        "resource_type": "互动教程/博客系列",
+                        "language": "EN",
+                        "reason": "从零开始的Docker课程，通过实际操作讲解核心概念，非常适合初学者。"
+                    },
+                    {
+                        "resource_name": "《Docker — 从入门到实践》",
+                        "resource_url": "https://vuepress.mirror.docker-practice.com/",
+                        "resource_type": "开源中文书籍",
+                        "language": "CN",
+                        "reason": "国内最受欢迎的Docker开源书籍之一，内容全面，覆盖了从基础到实践的方方面面。"
+                    }
+                ]
+            },
+            {
+                "step": 10,
+                "skill": "CI/CD (GitHub Actions)",
+                "prerequisites": ["版本控制 (Git 核心工作流)", "容器化 (Docker & Docker Compose)"],
+                "resources": [
+                    {
+                        "resource_name": "GitHub Actions Documentation",
+                        "resource_url": "https://docs.github.com/en/actions",
+                        "resource_type": "官方文档",
+                        "language": "EN/CN",
+                        "reason": "学习任何技术的最佳起点，官方文档最权威、最准确。"
+                    },
+                    {
+                        "resource_name": "CI/CD with GitHub Actions - Full Course",
+                        "resource_url": "https://www.youtube.com/watch?v=R8_veQiY-c8",
+                        "resource_type": "视频课程",
+                        "language": "EN",
+                        "reason": "freeCodeCamp出品的免费课程，系统性地讲解了如何使用GitHub Actions构建完整的CI/CD流水线。"
+                    }
+                ]
+            },
+            {
+                "step": 11,
+                "skill": "日志 (Logging)",
+                "prerequisites": ["Web 框架 (FastAPI 或 Flask)"],
+                "resources": [
+                    {
+                        "resource_name": "Python Logging HOWTO",
+                        "resource_url": "https://docs.python.org/3/howto/logging.html",
+                        "resource_type": "官方文档/指南",
+                        "language": "EN",
+                        "reason": "Python官方的日志指南，是理解和正确使用logging模块的最权威资料。"
+                    }
+                ]
+            },
+            {
+                "step": 12,
+                "skill": "监控 (Prometheus & Grafana)",
+                "prerequisites": ["Web 框架 (FastAPI 或 Flask)", "容器化 (Docker & Docker Compose)"],
+                "resources": [
+                    {
+                        "resource_name": "Prometheus - Overview",
+                        "resource_url": "https://prometheus.io/docs/introduction/overview/",
+                        "resource_type": "官方文档",
+                        "language": "EN",
+                        "reason": "Prometheus官方文档，快速理解其架构和核心概念。"
+                    },
+                    {
+                        "resource_name": "Grafana Fundamentals",
+                        "resource_url": "https://grafana.com/tutorials/grafana-fundamentals/",
+                        "resource_type": "官方教程",
+                        "language": "EN",
+                        "reason": "Grafana官方的基础教程，手把手教你创建第一个Dashboard。"
                     }
                 ]
             }
@@ -1303,267 +1283,487 @@ mock_db = {
         "roadmap_title": "DevOps工程师",
         "stages": [
             {
-                "steps": [
+                "step": 1,
+                "skill": "Linux 命令行与系统管理",
+                "prerequisites": [],
+                "resources": [
                     {
-                        "step": 1,
-                        "skill": "Linux 命令行与系统管理",
-                        "prerequisites": [],
-                        "resources": [
-                            {
-                                "resource_name": "《The Linux Command Line》",
-                                "resource_url": "https://linuxcommand.org/tlcl.php",
-                                "resource_type": "免费电子书",
-                                "reason": "全球公认的Linux命令行‘圣经’，系统性强，从零到精通，打下坚实基础。"
-                            },
-                            {
-                                "resource_name": "linuxjourney",
-                                "resource_url": "https://linuxjourney.com/",
-                                "resource_type": "互动教程",
-                                "reason": "‘小步快跑’的互动式学习平台，通过在线练习快速掌握核心概念，适合初学者。"
-                            }
-                        ]
+                        "resource_name": "《The Linux Command Line》",
+                        "resource_url": "https://linuxcommand.org/tlcl.php",
+                        "resource_type": "免费电子书",
+                        "reason": "全球公认的Linux命令行‘圣经’，系统性强，从零到精通，打下坚实基础。"
                     },
                     {
-                        "step": 2,
-                        "skill": "计算机网络基础",
-                        "prerequisites": [],
-                        "resources": [
-                            {
-                                "resource_name": "Hussein Nasser's YouTube Channel",
-                                "resource_url": "https://www.youtube.com/@hnasr/playlists",
-                                "resource_type": "视频课程",
-                                "reason": "深入讲解网络协议的本质，图解清晰，帮你建立超越面试知识点的深度理解。"
-                            },
-                            {
-                                "resource_name": "Julia Evans's Blog & Zines",
-                                "resource_url": "https://jvns.ca/",
-                                "resource_type": "深度文章/漫画",
-                                "reason": "用有趣、可视化的方式解释复杂网络概念，如DNS、HTTP，高效且易于记忆。"
-                            }
-                        ]
-                    },
-                    {
-                        "step": 3,
-                        "skill": "脚本编程 (Python 或 Go)",
-                        "prerequisites": [],
-                        "resources": [
-                            {
-                                "resource_name": "Automate the Boring Stuff with Python",
-                                "resource_url": "https://automatetheboringstuff.com/",
-                                "resource_type": "免费电子书/课程",
-                                "reason": "完美契合DevOps需求，不教软件工程，专教如何用Python实现自动化任务。"
-                            },
-                            {
-                                "resource_name": "A Tour of Go",
-                                "resource_url": "https://go.dev/tour/welcome/1",
-                                "resource_type": "官方互动教程",
-                                "reason": "Go语言官方出品，在浏览器中边学边练，是学习Go语言的权威第一站。"
-                            }
-                        ]
-                    },
-                    {
-                        "step": 4,
-                        "skill": "版本控制 (Git)",
-                        "prerequisites": [],
-                        "resources": [
-                            {
-                                "resource_name": "Pro Git (中文版)",
-                                "resource_url": "https://git-scm.com/book/zh/v2",
-                                "resource_type": "官方电子书",
-                                "reason": "Git官方权威书籍，不仅教‘如何用’，更教‘为什么’，深入理解底层原理。"
-                            },
-                            {
-                                "resource_name": "Learn Git Branching",
-                                "resource_url": "https://learngitbranching.js.org/",
-                                "resource_type": "互动可视化教程",
-                                "reason": "游戏化的方式让抽象的Git分支、合并、变基操作直观可见，掌握复杂工作流神器。"
-                            }
-                        ]
+                        "resource_name": "linuxjourney",
+                        "resource_url": "https://linuxjourney.com/",
+                        "resource_type": "互动教程",
+                        "reason": "‘小步快跑’的互动式学习平台，通过在线练习快速掌握核心概念，适合初学者。"
                     }
                 ]
             },
             {
-                "steps": [
+                "step": 2,
+                "skill": "计算机网络基础",
+                "prerequisites": [],
+                "resources": [
                     {
-                        "step": 5,
-                        "skill": "GitHub Actions",
-                        "prerequisites": ["版本控制 (Git)"],
-                        "resources": [
-                            {
-                                "resource_name": "GitHub Actions 官方文档与快速入门",
-                                "resource_url": "https://docs.github.com/en/actions/quickstart",
-                                "resource_type": "官方文档",
-                                "reason": "学习任何工具的最佳起点，官方文档权威、全面，示例丰富，紧跟最新特性。"
-                            },
-                            {
-                                "resource_name": "GitHub Actions Tutorial by TechWorld with Nana",
-                                "resource_url": "https://www.youtube.com/watch?v=R8_veQiYBjI&list=PLy7NrYWoggjzSIlwxeBbcgfAdYoxCIrM2",
-                                "resource_type": "视频课程",
-                                "reason": "顶级DevOps讲师Nana出品，从零开始系统讲解GitHub Actions所有核心概念和实战技巧。"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "steps": [
-                    {
-                        "step": 6,
-                        "skill": "容器化基础 (Docker)",
-                        "prerequisites": ["Linux 命令行与系统管理"],
-                        "resources": [
-                            {
-                                "resource_name": "Docker 官方入门教程 (Get Started)",
-                                "resource_url": "https://docs.docker.com/get-started/",
-                                "resource_type": "官方文档/教程",
-                                "reason": "官方手把手教程，覆盖Dockerfile、Compose等核心知识，建立可靠的知识体系。"
-                            },
-                            {
-                                "resource_name": "Play with Docker",
-                                "resource_url": "https://labs.play-with-docker.com/",
-                                "resource_type": "交互式实验环境",
-                                "reason": "无需本地安装，直接在浏览器中获得一个真实的Docker环境进行动手实验。"
-                            }
-                        ]
+                        "resource_name": "Hussein Nasser's YouTube Channel",
+                        "resource_url": "https://www.youtube.com/@hnasr/playlists",
+                        "resource_type": "视频课程",
+                        "reason": "深入讲解网络协议的本质，图解清晰，帮你建立超越面试知识点的深度理解。"
                     },
                     {
-                        "step": 7,
-                        "skill": "容器编排 (Kubernetes)",
-                        "prerequisites": ["容器化基础 (Docker)", "计算机网络基础"],
-                        "resources": [
-                            {
-                                "resource_name": "Kubernetes 官方文档 (中文版)",
-                                "resource_url": "https://kubernetes.io/zh-cn/docs/home/",
-                                "resource_type": "官方文档",
-                                "reason": "学习K8s最权威、最准确的资源，没有之一，备考CKA/CKAD必备。"
-                            },
-                            {
-                                "resource_name": "Killercoda - Interactive K8s Scenarios",
-                                "resource_url": "https://killercoda.com/",
-                                "resource_type": "交互式实验环境",
-                                "reason": "在浏览器中获得真实K8s集群，完成部署、排错等任务，将理论转化为实践技能。"
-                            },
-                            {
-                                "resource_name": "TechWorld with Nana - K8s Tutorial",
-                                "resource_url": "https://www.youtube.com/watch?v=X48VuDVv0do",
-                                "resource_type": "视频课程",
-                                "reason": "广受好评的入门视频，用生动的动画和图示解释K8s复杂架构，是系统学习前的绝佳领路人。"
-                            }
-                        ]
+                        "resource_name": "Julia Evans's Blog & Zines",
+                        "resource_url": "https://jvns.ca/",
+                        "resource_type": "深度文章/漫画",
+                        "reason": "用有趣、可视化的方式解释复杂网络概念，如DNS、HTTP，高效且易于记忆。"
                     }
                 ]
             },
             {
-                "steps": [
+                "step": 3,
+                "skill": "脚本编程 (Python 或 Go)",
+                "prerequisites": [],
+                "resources": [
                     {
-                        "step": 8,
-                        "skill": "基础设施即代码 (Terraform)",
-                        "prerequisites": ["脚本编程 (Python 或 Go)"],
-                        "resources": [
-                            {
-                                "resource_name": "HashiCorp Learn - Terraform Tutorials",
-                                "resource_url": "https://developer.hashicorp.com/terraform/tutorials",
-                                "resource_type": "官方互动教程",
-                                "reason": "Terraform创造者官方出品，质量极高，覆盖从基础到多云、GitOps等高级主题。"
-                            },
-                            {
-                                "resource_name": "freeCodeCamp - Terraform Course (2024)",
-                                "resource_url": "https://www.youtube.com/watch?v=7xngnjfIlK4",
-                                "resource_type": "视频课程",
-                                "reason": "2024年最新版Terraform入门教程，从零开始讲解核心概念，并部署实际的AWS基础设施。"
-                            }
-                        ]
+                        "resource_name": "Automate the Boring Stuff with Python",
+                        "resource_url": "https://automatetheboringstuff.com/",
+                        "resource_type": "免费电子书/课程",
+                        "reason": "完美契合DevOps需求，不教软件工程，专教如何用Python实现自动化任务。"
                     },
                     {
-                        "step": 9,
-                        "skill": "配置管理 (Ansible)",
-                        "prerequisites": ["Linux 命令行与系统管理"],
-                        "resources": [
-                            {
-                                "resource_name": "Ansible 官方文档 - User Guide",
-                                "resource_url": "https://docs.ansible.com/ansible/latest/user_guide/index.html",
-                                "resource_type": "官方文档",
-                                "reason": "最权威的参考资料，系统介绍Playbooks, Roles, Modules等核心概念。"
-                            },
-                            {
-                                "resource_name": "Jeff Geerling's YouTube Channel",
-                                "resource_url": "https://www.youtube.com/c/JeffGeerling",
-                                "resource_type": "视频教程/文章",
-                                "reason": "Ansible社区公认的专家，其教程非常实用，紧跟社区最佳实践。"
-                            }
-                        ]
+                        "resource_name": "A Tour of Go",
+                        "resource_url": "https://go.dev/tour/welcome/1",
+                        "resource_type": "官方互动教程",
+                        "reason": "Go语言官方出品，在浏览器中边学边练，是学习Go语言的权威第一站。"
                     }
                 ]
             },
             {
-                "steps": [
+                "step": 4,
+                "skill": "版本控制 (Git)",
+                "prerequisites": [],
+                "resources": [
                     {
-                        "step": 10,
-                        "skill": "监控与告警 (Prometheus & Grafana)",
-                        "prerequisites": ["Linux 命令行与系统管理", "计算机网络基础"],
-                        "resources": [
-                            {
-                                "resource_name": "Prometheus 官方文档",
-                                "resource_url": "https://prometheus.io/docs/introduction/overview/",
-                                "resource_type": "官方文档",
-                                "reason": "理解Prometheus核心概念（如PromQL）最准确的地方，使用者必读。"
-                            },
-                            {
-                                "resource_name": "Grafana Fundamentals (Official Tutorial)",
-                                "resource_url": "https://grafana.com/tutorials/grafana-fundamentals/",
-                                "resource_type": "官方实战教程",
-                                "reason": "Grafana官方出品，通过Docker一键启动包含Prometheus的完整环境，动手实践整个可观测性工作流。"
-                            }
-                        ]
+                        "resource_name": "Pro Git (中文版)",
+                        "resource_url": "https://git-scm.com/book/zh/v2",
+                        "resource_type": "官方电子书",
+                        "reason": "Git官方权威书籍，不仅教‘如何用’，更教‘为什么’，深入理解底层原理。"
                     },
                     {
-                        "step": 11,
-                        "skill": "日志管理 (ELK Stack)",
-                        "prerequisites": ["Linux 命令行与系统管理"],
-                        "resources": [
-                            {
-                                "resource_name": "Get started with the Elastic Stack",
-                                "resource_url": "https://www.elastic.co/start",
-                                "resource_type": "官方入门指南",
-                                "reason": "Elastic官方最新的云优先入门路径，通过免费云服务在几分钟内搭建功能齐全的日志平台。"
-                            },
-                            {
-                                "resource_name": "DigitalOcean - EFK on Kubernetes",
-                                "resource_url": "https://www.digitalocean.com/community/tutorials/how-to-set-up-an-elasticsearch-fluentd-and-kibana-efk-logging-stack-on-kubernetes",
-                                "resource_type": "深度实战文章",
-                                "reason": "高质量实战教程，展示了如何在K8s中部署日志系统，体现云原生最佳实践。"
-                            }
-                        ]
+                        "resource_name": "Learn Git Branching",
+                        "resource_url": "https://learngitbranching.js.org/",
+                        "resource_type": "互动可视化教程",
+                        "reason": "游戏化的方式让抽象的Git分支、合并、变基操作直观可见，掌握复杂工作流神器。"
                     }
                 ]
             },
             {
-                "steps": [
+                "step": 5,
+                "skill": "GitHub Actions",
+                "prerequisites": ["版本控制 (Git)"],
+                "resources": [
                     {
-                        "step": 12,
-                        "skill": "核心云服务 (AWS)",
-                        "prerequisites": ["Linux 命令行与系统管理", "计算机网络基础"],
-                        "resources": [
-                            {
-                                "resource_name": "AWS Workshops",
-                                "resource_url": "https://workshops.aws/",
-                                "resource_type": "官方互动实验",
-                                "reason": "AWS官方免费动手实验平台，在真实环境中构建应用，是转化知识为技能的最佳方式。"
-                            },
-                            {
-                                "resource_name": "freeCodeCamp - AWS CCP Course",
-                                "resource_url": "https://www.youtube.com/watch?v=SOTamWNgDKc",
-                                "resource_type": "视频课程",
-                                "reason": "系统且清晰地讲解AWS核心服务(IAM, VPC, EC2, S3)，帮你建立宏观认知。"
-                            }
-                        ]
+                        "resource_name": "GitHub Actions 官方文档与快速入门",
+                        "resource_url": "https://docs.github.com/en/actions/quickstart",
+                        "resource_type": "官方文档",
+                        "reason": "学习任何工具的最佳起点，官方文档权威、全面，示例丰富，紧跟最新特性。"
+                    },
+                    {
+                        "resource_name": "GitHub Actions Tutorial by TechWorld with Nana",
+                        "resource_url": "https://www.youtube.com/watch?v=R8_veQiYBjI&list=PLy7NrYWoggjzSIlwxeBbcgfAdYoxCIrM2",
+                        "resource_type": "视频课程",
+                        "reason": "顶级DevOps讲师Nana出品，从零开始系统讲解GitHub Actions所有核心概念和实战技巧。"
+                    }
+                ]
+            },
+            {
+                "step": 6,
+                "skill": "容器化基础 (Docker)",
+                "prerequisites": ["Linux 命令行与系统管理"],
+                "resources": [
+                    {
+                        "resource_name": "Docker 官方入门教程 (Get Started)",
+                        "resource_url": "https://docs.docker.com/get-started/",
+                        "resource_type": "官方文档/教程",
+                        "reason": "官方手把手教程，覆盖Dockerfile、Compose等核心知识，建立可靠的知识体系。"
+                    },
+                    {
+                        "resource_name": "Play with Docker",
+                        "resource_url": "https://labs.play-with-docker.com/",
+                        "resource_type": "交互式实验环境",
+                        "reason": "无需本地安装，直接在浏览器中获得一个真实的Docker环境进行动手实验。"
+                    }
+                ]
+            },
+            {
+                "step": 7,
+                "skill": "容器编排 (Kubernetes)",
+                "prerequisites": ["容器化基础 (Docker)", "计算机网络基础"],
+                "resources": [
+                    {
+                        "resource_name": "Kubernetes 官方文档 (中文版)",
+                        "resource_url": "https://kubernetes.io/zh-cn/docs/home/",
+                        "resource_type": "官方文档",
+                        "reason": "学习K8s最权威、最准确的资源，没有之一，备考CKA/CKAD必备。"
+                    },
+                    {
+                        "resource_name": "Killercoda - Interactive K8s Scenarios",
+                        "resource_url": "https://killercoda.com/",
+                        "resource_type": "交互式实验环境",
+                        "reason": "在浏览器中获得真实K8s集群，完成部署、排错等任务，将理论转化为实践技能。"
+                    },
+                    {
+                        "resource_name": "TechWorld with Nana - K8s Tutorial",
+                        "resource_url": "https://www.youtube.com/watch?v=X48VuDVv0do",
+                        "resource_type": "视频课程",
+                        "reason": "广受好评的入门视频，用生动的动画和图示解释K8s复杂架构，是系统学习前的绝佳领路人。"
+                    }
+                ]
+            },
+            {
+                "step": 8,
+                "skill": "基础设施即代码 (Terraform)",
+                "prerequisites": ["脚本编程 (Python 或 Go)"],
+                "resources": [
+                    {
+                        "resource_name": "HashiCorp Learn - Terraform Tutorials",
+                        "resource_url": "https://developer.hashicorp.com/terraform/tutorials",
+                        "resource_type": "官方互动教程",
+                        "reason": "Terraform创造者官方出品，质量极高，覆盖从基础到多云、GitOps等高级主题。"
+                    },
+                    {
+                        "resource_name": "freeCodeCamp - Terraform Course (2024)",
+                        "resource_url": "https://www.youtube.com/watch?v=7xngnjfIlK4",
+                        "resource_type": "视频课程",
+                        "reason": "2024年最新版Terraform入门教程，从零开始讲解核心概念，并部署实际的AWS基础设施。"
+                    }
+                ]
+            },
+            {
+                "step": 9,
+                "skill": "配置管理 (Ansible)",
+                "prerequisites": ["Linux 命令行与系统管理"],
+                "resources": [
+                    {
+                        "resource_name": "Ansible 官方文档 - User Guide",
+                        "resource_url": "https://docs.ansible.com/ansible/latest/user_guide/index.html",
+                        "resource_type": "官方文档",
+                        "reason": "最权威的参考资料，系统介绍Playbooks, Roles, Modules等核心概念。"
+                    },
+                    {
+                        "resource_name": "Jeff Geerling's YouTube Channel",
+                        "resource_url": "https://www.youtube.com/c/JeffGeerling",
+                        "resource_type": "视频教程/文章",
+                        "reason": "Ansible社区公认的专家，其教程非常实用，紧跟社区最佳实践。"
+                    }
+                ]
+            },
+            {
+                "step": 10,
+                "skill": "监控与告警 (Prometheus & Grafana)",
+                "prerequisites": ["Linux 命令行与系统管理", "计算机网络基础"],
+                "resources": [
+                    {
+                        "resource_name": "Prometheus 官方文档",
+                        "resource_url": "https://prometheus.io/docs/introduction/overview/",
+                        "resource_type": "官方文档",
+                        "reason": "理解Prometheus核心概念（如PromQL）最准确的地方，使用者必读。"
+                    },
+                    {
+                        "resource_name": "Grafana Fundamentals (Official Tutorial)",
+                        "resource_url": "https://grafana.com/tutorials/grafana-fundamentals/",
+                        "resource_type": "官方实战教程",
+                        "reason": "Grafana官方出品，通过Docker一键启动包含Prometheus的完整环境，动手实践整个可观测性工作流。"
+                    }
+                ]
+            },
+            {
+                "step": 11,
+                "skill": "日志管理 (ELK Stack)",
+                "prerequisites": ["Linux 命令行与系统管理"],
+                "resources": [
+                    {
+                        "resource_name": "Get started with the Elastic Stack",
+                        "resource_url": "https://www.elastic.co/start",
+                        "resource_type": "官方入门指南",
+                        "reason": "Elastic官方最新的云优先入门路径，通过免费云服务在几分钟内搭建功能齐全的日志平台。"
+                    },
+                    {
+                        "resource_name": "DigitalOcean - EFK on Kubernetes",
+                        "resource_url": "https://www.digitalocean.com/community/tutorials/how-to-set-up-an-elasticsearch-fluentd-and-kibana-efk-logging-stack-on-kubernetes",
+                        "resource_type": "深度实战文章",
+                        "reason": "高质量实战教程，展示了如何在K8s中部署日志系统，体现云原生最佳实践。"
+                    }
+                ]
+            },
+            {
+                "step": 12,
+                "skill": "核心云服务 (AWS)",
+                "prerequisites": ["Linux 命令行与系统管理", "计算机网络基础"],
+                "resources": [
+                    {
+                        "resource_name": "AWS Workshops",
+                        "resource_url": "https://workshops.aws/",
+                        "resource_type": "官方互动实验",
+                        "reason": "AWS官方免费动手实验平台，在真实环境中构建应用，是转化知识为技能的最佳方式。"
+                    },
+                    {
+                        "resource_name": "freeCodeCamp - AWS CCP Course",
+                        "resource_url": "https://www.youtube.com/watch?v=SOTamWNgDKc",
+                        "resource_type": "视频课程",
+                        "reason": "系统且清晰地讲解AWS核心服务(IAM, VPC, EC2, S3)，帮你建立宏观认知。"
+                    }
+                ]
+            }
+        ]
+    },
+    "data-engineer": {
+    "roadmap_title": "数据工程师",
+        "stages": [
+            {
+                "step": 1,
+                "skill": "Python for Data (Pandas & NumPy)",
+                "prerequisites": [],
+                "resources": [
+                    {
+                        "resource_name": "Kaggle - Pandas Course",
+                        "resource_url": "https://www.kaggle.com/learn/pandas",
+                        "resource_type": "互动教程/动手实验",
+                        "reason": "在全球最大的数据科学社区，通过交互式Notebook快速动手实践Pandas核心操作。"
+                    },
+                    {
+                        "resource_name": "freeCodeCamp - Data Analysis with Python",
+                        "resource_url": "https://www.freecodecamp.org/learn/data-analysis-with-python/",
+                        "resource_type": "认证项目/视频课程",
+                        "reason": "通过完成五个基于真实数据集的分析项目来获得认证，项目驱动，实战性极强。"
+                    },
+                    {
+                        "resource_name": "Pandas 官方入门教程",
+                        "resource_url": "https://pandas.pydata.org/docs/getting_started/tutorials.html",
+                        "resource_type": "官方文档",
+                        "reason": "理解Pandas设计哲学和“惯用”代码风格的最佳途径，权威且系统。"
+                    }
+                ]
+            },
+            {
+                "step": 2,
+                "skill": "高级 SQL (窗口函数, CTEs)",
+                "prerequisites": [],
+                "resources": [
+                    {
+                        "resource_name": "Mode - Advanced SQL Tutorial",
+                        "resource_url": "https://mode.com/sql-tutorial/sql-window-functions/",
+                        "resource_type": "深度文章/互动教程",
+                        "reason": "业界享有盛誉的免费教程，不仅教“如何做”，更阐述“为何要这么做”。"
+                    },
+                    {
+                        "resource_name": "LeetCode - Top SQL 50",
+                        "resource_url": "https://leetcode.com/studyplan/top-sql-50/",
+                        "resource_type": "编程练习/实战平台",
+                        "reason": "LeetCode官方精选50道SQL面试高频题，是检验和提升SQL实战能力的最佳演练场。"
+                    }
+                ]
+            },
+            {
+                "step": 3,
+                "skill": "Linux 命令行",
+                "prerequisites": [],
+                "resources": [
+                    {
+                        "resource_name": "The Linux Command Line (免费电子书)",
+                        "resource_url": "https://linuxcommand.org/tlcl.php",
+                        "resource_type": "电子书 (免费PDF)",
+                        "reason": "被广泛认为是学习Linux命令行的“圣经”，全面覆盖从基础到Shell脚本的知识体系。"
+                    },
+                    {
+                        "resource_name": "learnshell.org",
+                        "resource_url": "https://www.learnshell.org/",
+                        "resource_type": "互动教程",
+                        "reason": "无需安装任何环境，直接在浏览器中边学边练，快速建立对命令行的体感。"
+                    }
+                ]
+            },
+            {
+                "step": 4,
+                "skill": "版本控制 (Git)",
+                "prerequisites": [],
+                "resources": [
+                    {
+                        "resource_name": "Pro Git (官方书籍)",
+                        "resource_url": "https://git-scm.com/book/en/v2",
+                        "resource_type": "电子书 (免费在线版)",
+                        "reason": "Git官方推荐的最权威学习材料，从底层模型讲起，助你真正掌握Git而非死记命令。"
+                    },
+                    {
+                        "resource_name": "Learn Git Branching",
+                        "resource_url": "https://learngitbranching.js.org/",
+                        "resource_type": "互动式可视化教程",
+                        "reason": "革命性的Git分支学习工具，通过可视化动画和沙盒练习，完美理解复杂的分支操作。"
+                    }
+                ]
+            },
+            {
+                "step": 5,
+                "skill": "数据建模与理论 (Kimball/Inmon)",
+                "prerequisites": ["高级 SQL (窗口函数, CTEs)"],
+                "resources": [
+                    {
+                        "resource_name": "The Data Warehouse Toolkit (书籍)",
+                        "resource_url": "http://www.r-5.org/files/books/computers/databases/warehouses/Ralph_Kimball_Margy_Ross-The_Data_Warehouse_Toolkit-EN.pdf",
+                        "resource_type": "经典书籍 (免费PDF)",
+                        "reason": "维度建模“圣经”的免费PDF版，是每个数据工程师构建知识体系的必读之作。"
+                    },
+                    {
+                        "resource_name": "Holistics - Kimball's Dimensional Modeling",
+                        "resource_url": "https://www.holistics.io/books/setup-analytics/kimball-s-dimensional-data-modeling/",
+                        "resource_type": "深度文章",
+                        "reason": "以现代数据栈的视角解读Kimball理论，清晰阐述了其在当今时代的现实意义。"
+                    }
+                ]
+            },
+            {
+                "step": 6,
+                "skill": "现代云数仓 (Snowflake / BigQuery)",
+                "prerequisites": ["数据建模与理论 (Kimball/Inmon)"],
+                "resources": [
+                    {
+                        "resource_name": "Snowflake University - Hands-On Essentials",
+                        "resource_url": "https://learn.snowflake.com/en/pages/hands-on-essentials-track/",
+                        "resource_type": "官方互动教程",
+                        "reason": "Snowflake官方学习路径，提供真实环境完成从数据加载到查询的端到端核心任务。"
+                    },
+                    {
+                        "resource_name": "Google Cloud - BigQuery Introduction",
+                        "resource_url": "https://cloud.google.com/bigquery/docs/introduction?hl=zh-cn",
+                        "resource_type": "官方文档",
+                        "reason": "Google Cloud官方中文文档，权威介绍了BigQuery的核心概念、架构与优势。"
+                    }
+                ]
+            },
+            {
+                "step": 7,
+                "skill": "大数据处理 (Apache Spark)",
+                "prerequisites": ["Python for Data (Pandas & NumPy)", "高级 SQL (窗口函数, CTEs)"],
+                "resources": [
+                    {
+                        "resource_name": "Databricks - Spark Quick Start",
+                        "resource_url": "https://www.databricks.com/spark/getting-started-with-apache-spark/quick-start",
+                        "resource_type": "官方课程/互动笔记本",
+                        "reason": "由Spark创始团队提供，通过交互式Notebook引导完成数据加载与转换的核心操作。"
+                    },
+                    {
+                        "resource_name": "Apache Spark 官方文档 - Spark SQL Guide",
+                        "resource_url": "https://spark.apache.org/docs/latest/sql-programming-guide.html",
+                        "resource_type": "官方文档",
+                        "reason": "关于Spark DataFrame API最全面、最准确的参考资料，高性能Spark开发的必读文献。"
+                    }
+                ]
+            },
+            {
+                "step": 8,
+                "skill": "数据转换 (dbt)",
+                "prerequisites": ["高级 SQL (窗口函数, CTEs)", "数据建模与理论 (Kimball/Inmon)"],
+                "resources": [
+                    {
+                        "resource_name": "dbt Labs - dbt Fundamentals",
+                        "resource_url": "https://courses.getdbt.com/courses/dbt-fundamentals",
+                        "resource_type": "官方免费课程",
+                        "reason": "dbt官方推出的免费基础课程，系统性地学习模型构建、测试、文档和部署。"
+                    },
+                    {
+                        "resource_name": "dbt Labs - Getting Started Tutorial",
+                        "resource_url": "https://docs.getdbt.com/guides/getting-started",
+                        "resource_type": "官方文档/动手教程",
+                        "reason": "手把手指导你从零开始搭建一个完整的dbt项目，理论学习后最好的实践巩固。"
+                    }
+                ]
+            },
+            {
+                "step": 9,
+                "skill": "工作流编排 (Apache Airflow)",
+                "prerequisites": ["Python for Data (Pandas & NumPy)", "数据转换 (dbt)"],
+                "resources": [
+                    {
+                        "resource_name": "Astronomer Academy - Airflow 101",
+                        "resource_url": "https://academy.astronomer.io/path/airflow-101-airflow-2",
+                        "resource_type": "权威指南/视频课程",
+                        "reason": "Airflow核心商业公司出品的免费视频学习路径，系统讲解Airflow 2.x的核心概念与实践。"
+                    },
+                    {
+                        "resource_name": "Apache Airflow 官方文档 - Tutorial",
+                        "resource_url": "https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html",
+                        "resource_type": "官方文档/动手教程",
+                        "reason": "每个Airflow新手都应完成的第一步，引导你编写并运行第一个DAG。"
+                    }
+                ]
+            },
+            {
+                "step": 10,
+                "skill": "消息队列/事件流 (Apache Kafka)",
+                "prerequisites": ["Linux 命令行"],
+                "resources": [
+                    {
+                        "resource_name": "Confluent Developer - Learn Apache Kafka",
+                        "resource_url": "https://developer.confluent.io/",
+                        "resource_type": "官方教程/动手实验",
+                        "reason": "由Kafka创始团队创建的“黄金资源库”，提供海量高质量免费教程和基于Docker的实验。"
+                    },
+                    {
+                        "resource_name": "Apache Kafka 官方文档 - Quickstart",
+                        "resource_url": "https://kafka.apache.org/quickstart",
+                        "resource_type": "官方文档/教程",
+                        "reason": "理解Kafka底层组件如何协同工作的最直接方式，建立对物理架构的直观理解。"
+                    }
+                ]
+            },
+            {
+                "step": 11,
+                "skill": "流处理框架 (Spark/Flink)",
+                "prerequisites": ["大数据处理 (Apache Spark)", "消息队列/事件流 (Apache Kafka)"],
+                "resources": [
+                    {
+                        "resource_name": "Apache Spark 官方 - Structured Streaming Guide",
+                        "resource_url": "https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html",
+                        "resource_type": "官方文档",
+                        "reason": "学习Spark流处理最权威、最全面的资源，详解核心模型与高级特性。"
+                    },
+                    {
+                        "resource_name": "Apache Flink 官方 - Operations Playground",
+                        "resource_url": "https://nightlies.apache.org/flink/flink-docs-stable/docs/try-flink/flink-operations-playground/",
+                        "resource_type": "官方教程/动手实验",
+                        "reason": "在官方提供的Docker沙盒环境中，亲手部署Flink集群、提交作业并模拟故障恢复。"
+                    }
+                ]
+            },
+            {
+                "step": 12,
+                "skill": "核心云数据服务 (AWS)",
+                "prerequisites": ["数据转换 (dbt)", "工作流编排 (Apache Airflow)"],
+                "resources": [
+                    {
+                        "resource_name": "AWS Skill Builder - Data Analytics Learning Plan",
+                        "resource_url": "https://explore.skillbuilder.aws/learn/public/learning_plan/view/20/data-analytics-learning-plan",
+                        "resource_type": "官方免费课程/学习路径",
+                        "reason": "AWS官方免费学习中心，系统性介绍S3、Glue、Redshift等核心数据服务。"
+                    },
+                    {
+                        "resource_name": "AWS Workshops",
+                        "resource_url": "https://workshops.aws/",
+                        "resource_type": "官方动手实验/项目指南",
+                        "reason": "海量、免费、手把手的实验指南，指导你在自己账户中从零构建完整的端到端数据管道。"
+                    },
+                    {
+                        "resource_name": "AWS Samples on GitHub",
+                        "resource_url": "https://github.com/aws-samples",
+                        "resource_type": "官方代码示例/架构模板",
+                        "reason": "由AWS官方工程师创建的真实项目代码库，了解生产级代码范例和最佳实践的宝藏。"
                     }
                 ]
             }
         ]
     }
 }
-
 # ==================================================
 # API 路由 (Endpoints)
 # ==================================================
