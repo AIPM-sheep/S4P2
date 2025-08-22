@@ -40,7 +40,11 @@
         {
             "slug": "data-engineer",
             "title": "数据工程师"
-        }
+        },
+        {
+            "slug": "mobile-developer",
+            "title": "移动应用开发者"
+        },
     ]
     ```
 
@@ -1935,6 +1939,368 @@
               "resource_url": "https://github.com/aws-samples",
               "resource_type": "官方代码示例/架构模板",
               "reason": "由AWS官方工程师创建的真实项目代码库，了解生产级代码范例和最佳实践的宝藏。"
+            }
+          ]
+        }
+      ]
+    }
+    ```
+
+根据提供的路径标识符（roadmap_slug），获取该学习路径下的所有教学资源节点，并按学习顺序排列。
+
+* 接口路径: `/api/roadmaps/{roadmap_slug}`
+  * 路径参数 (Path Parameter):
+    * `roadmap_slug` (string, required): 学习路径的唯一标识。例如: `mobile-developer`。
+
+* 请求方法: `GET`
+
+* 请求参数: 无
+
+* 成功返回示例 (Success 200 OK):
+  * 当 `roadmap_slug` 为 `mobile-developer` 时，返回的数据结构如下（stages 为“扁平化字典列表”）：
+```json
+    {
+      "roadmap_title": "移动端开发工程师",
+      "stages": [
+        {
+          "step": 1,
+          "skill": "移动端 UI/UX 设计原则",
+          "prerequisites": [],
+          "resources": [
+            {
+              "resource_name": "Apple Human Interface Guidelines",
+              "resource_url": "https://developer.apple.com/design/human-interface-guidelines/",
+              "resource_type": "官方设计规范",
+              "reason": "所有iOS、iPadOS、watchOS及visionOS开发的“设计圣经”，是理解苹果生态设计哲学、组件规范和交互模式的权威源头。"
+            },
+            {
+              "resource_name": "Material Design 3",
+              "resource_url": "https://m3.material.io/",
+              "resource_type": "官方设计系统与规范",
+              "reason": "Google官方设计系统，现代Android应用设计的核心指南，尤其Material 3版本在动态色彩、组件更新上都有革新。"
+            },
+            {
+              "resource_name": "Laws of UX",
+              "resource_url": "https://lawsofux.com/",
+              "resource_type": "深度文章/设计原则合集",
+              "reason": "将复杂的心理学原则提炼为简洁的设计法则，为界面和交互决策提供强有力的理论支撑，帮助开发者“知其所以然”。"
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "skill": "版本控制 (Git 核心工作流)",
+          "prerequisites": [],
+          "resources": [
+            {
+              "resource_name": "Pro Git (中文版)",
+              "resource_url": "https://git-scm.com/book/zh/v2",
+              "resource_type": "官方书籍 (免费在线)",
+              "reason": "学习Git最权威、最全面的著作，由Git官方推荐，内容覆盖从基础到高级原理，是无可替代的黄金标准。"
+            },
+            {
+              "resource_name": "Learn Git Branching",
+              "resource_url": "https://learngitbranching.js.org/?locale=zh_CN",
+              "resource_type": "交互式在线教程",
+              "reason": "极具创新性的可视化学习工具，通过游戏化的方式动手实践Git核心操作，对初学者极其友好，实战性极强。"
+            },
+            {
+              "resource_name": "GitHub Flow",
+              "resource_url": "https://docs.github.com/zh/get-started/using-github/github-flow",
+              "resource_type": "官方工作流指南",
+              "reason": "由GitHub官方推荐的轻量级、基于分支的协作模型，比GitFlow更简单实用，能帮助学习者快速融入现代软件团队。"
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "skill": "移动端 API 交互 (RESTful API & JSON)",
+          "prerequisites": [],
+          "resources": [
+            {
+              "resource_name": "MDN Web Docs - HTTP",
+              "resource_url": "https://developer.mozilla.org/zh-CN/docs/Web/HTTP",
+              "resource_type": "官方文档/权威教程",
+              "reason": "Web技术的黄金标准文档库，详细解释了HTTP协议，是理解RESTful API的基石，内容权威、准确。"
+            },
+            {
+              "resource_name": "Postman Learning Center",
+              "resource_url": "https://learning.postman.com/docs/getting-started/introduction/",
+              "resource_type": "工具实践教程",
+              "reason": "Postman是API开发与测试的事实标准，其学习中心提供了从零开始的实战教程，能将理论与实际操作紧密结合。"
+            },
+            {
+              "resource_name": "JSONPlaceholder",
+              "resource_url": "https://jsonplaceholder.typicode.com/",
+              "resource_type": "免费在线模拟 API",
+              "reason": "免费的在线REST API，无需自己搭建后端即可练习移动端的网络请求、JSON解析和数据建模，是初学者绝佳的“靶场”。"
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "skill": "Swift 编程语言",
+          "prerequisites": [],
+          "resources": [
+            {
+              "resource_name": "The Swift Programming Language",
+              "resource_url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/",
+              "resource_type": "官方书籍 (免费在线)",
+              "reason": "苹果官方撰写的Swift语言权威指南，全面、精确地覆盖了所有语法和特性，是学习Swift最权威的“第一手资料”。"
+            },
+            {
+              "resource_name": "Hacking with Swift - 100 Days of Swift",
+              "resource_url": "https://www.hackingwithswift.com/100",
+              "resource_type": "项目驱动式教程",
+              "reason": "社区公认的最佳Swift入门实战课程，完全免费，通过100天项目将语言知识与App开发实践紧密结合。"
+            },
+            {
+              "resource_name": "Stanford CS193p",
+              "resource_url": "https://cs193p.stanford.edu/2023",
+              "resource_type": "大学公开课",
+              "reason": "斯坦福大学的王牌iOS开发课程，以深度和严谨性著称，深入剖析MVVM架构和SwiftUI核心思想，是殿堂级的免费资源。"
+            }
+          ]
+        },
+        {
+          "step": 5,
+          "skill": "SwiftUI 声明式UI框架",
+          "prerequisites": ["Swift 编程语言"],
+          "resources": [
+            {
+              "resource_name": "Apple Developer - SwiftUI Tutorials",
+              "resource_url": "https://developer.apple.com/tutorials/swiftui",
+              "resource_type": "官方实战教程",
+              "reason": "学习SwiftUI的最佳起点，通过构建一个真实应用，手把手教会核心概念，内容权威，与Xcode深度集成。"
+            },
+            {
+              "resource_name": "Hacking with Swift - 100 Days of SwiftUI",
+              "resource_url": "https://www.hackingwithswift.com/100/swiftui",
+              "resource_type": "项目驱动式教程",
+              "reason": "提供了海量的项目和挑战，覆盖从基础到高级的方方面面，其实战性和社区活跃度无可匹敌，是精通SwiftUI的必经之路。"
+            }
+          ]
+        },
+        {
+          "step": 6,
+          "skill": "iOS 核心概念",
+          "prerequisites": ["Swift 编程语言"],
+          "resources": [
+            {
+              "resource_name": "Apple Developer Documentation",
+              "resource_url": "https://developer.apple.com/documentation/",
+              "resource_type": "官方API文档",
+              "reason": "针对URLSession、Core Data和最新的SwiftData，苹果官方文档是最终的真相来源，提供了最精确的API定义和示例。"
+            },
+            {
+              "resource_name": "Kodeco (Ray Wenderlich) Tutorials",
+              "resource_url": "https://www.kodeco.com/ios/",
+              "resource_type": "深度文章/实战教程",
+              "reason": "质量极高的教程网站，其关于URLSession、Core Data和SwiftData的教程通常包含完整项目，并详细解释原理和陷阱。"
+            }
+          ]
+        },
+        {
+          "step": 7,
+          "skill": "依赖管理 (Swift Package Manager)",
+          "prerequisites": ["Swift 编程语言"],
+          "resources": [
+            {
+              "resource_name": "Swift.org - Swift Package Manager",
+              "resource_url": "https://www.swift.org/package-manager/",
+              "resource_type": "官方文档",
+              "reason": "SPM的官方主页和文档入口，详细描述了清单文件结构、依赖解析规则，是创建和分发代码包的权威参考。"
+            }
+          ]
+        },
+        {
+          "step": 8,
+          "skill": "Kotlin 编程语言",
+          "prerequisites": [],
+          "resources": [
+            {
+              "resource_name": "Kotlin Koans",
+              "resource_url": "https://play.kotlinlang.org/koans/",
+              "resource_type": "交互式在线练习",
+              "reason": "JetBrains官方出品的Kotlin入门“道场”，通过在线编程练习，以“闯关式”体验掌握Kotlin语法，趣味且高效。"
+            }
+          ]
+        },
+        {
+          "step": 9,
+          "skill": "Android Basics in Kotlin",
+          "prerequisites": ["Kotlin 编程语言"],
+          "resources": [
+            {
+              "resource_name": "Android Basics in Kotlin",
+              "resource_url": "https://developer.android.com/courses/android-basics-kotlin/course",
+              "resource_type": "官方入门课程",
+              "reason": "Google官方为初学者设计的免费课程，将Kotlin学习与Android开发基础完美结合，是新手进入Android世界的最佳路径。"
+            }
+          ]
+        },
+        {
+          "step": 10,
+          "skill": "现代 Android UI (Jetpack Compose)",
+          "prerequisites": ["Kotlin 编程语言"],
+          "resources": [
+            {
+              "resource_name": "Jetpack Compose Pathway",
+              "resource_url": "https://developer.android.com/courses/pathways/compose",
+              "resource_type": "官方学习路径",
+              "reason": "Google官方为学习Compose打造的全方位学习路径，包含高质量的Codelabs、视频和文档，系统且权威。"
+            },
+            {
+              "resource_name": "Now in Android (Official Sample App)",
+              "resource_url": "https://github.com/android/nowinandroid",
+              "resource_type": "官方示例项目",
+              "reason": "完全使用Kotlin和Compose构建的官方开源应用，是理论通向实践的最佳桥梁，展示了现代Android架构的最佳实践。"
+            }
+          ]
+        },
+        {
+          "step": 11,
+          "skill": "Android 核心概念",
+          "prerequisites": ["Kotlin 编程语言"],
+          "resources": [
+            {
+              "resource_name": "Google Codelabs for Android",
+              "resource_url": "https://codelabs.developers.google.com/?cat=Android",
+              "resource_type": "官方实战教程",
+              "reason": "提供针对Room、Retrofit等特定技术点的“手把手”教程，项目完整、步骤清晰，是学习Jetpack核心库的最佳方式。"
+            },
+            {
+              "resource_name": "Retrofit Official Documentation",
+              "resource_url": "https://square.github.io/retrofit/",
+              "resource_type": "官方库文档",
+              "reason": "Android生态最流行的类型安全HTTP客户端，官方文档简洁明了，是使用该库时最权威的参考。"
+            }
+          ]
+        },
+        {
+          "step": 12,
+          "skill": "构建系统 (Gradle)",
+          "prerequisites": ["Kotlin 编程语言"],
+          "resources": [
+            {
+              "resource_name": "Android Gradle Plugin User Guide",
+              "resource_url": "https://developer.android.com/studio/build",
+              "resource_type": "官方指南",
+              "reason": "Google官方提供的权威指南，解释了Android项目特有的构建逻辑，如依赖配置、构建变体、签名等。"
+            }
+          ]
+        },
+        {
+          "step": 13,
+          "skill": "Flutter 框架与 Dart 语言",
+          "prerequisites": [],
+          "resources": [
+            {
+              "resource_name": "Flutter Official \"Get Started\"",
+              "resource_url": "https://docs.flutter.dev/get-started/install",
+              "resource_type": "官方入门教程",
+              "reason": "Flutter官方文档被公认为业界典范，引导清晰，体验流畅，并内置Dart语言之旅，一站式完成基础学习。"
+            },
+            {
+              "resource_name": "The Boring Flutter Development Show",
+              "resource_url": "https://www.youtube.com/watch?v=JFm_89xDM_k&list=PLjxrf2q8roU3ahJVrSgAnPjzkpGmL9Czl",
+              "resource_type": "官方视频实战秀",
+              "reason": "由Flutter团队工程师“实时编程”，充满了真实的开发过程和问题解决，能让学习者看到专家如何思考和使用Flutter。"
+            }
+          ]
+        },
+        {
+          "step": 14,
+          "skill": "Flutter 状态管理 (Provider / BLoC)",
+          "prerequisites": ["Flutter 框架与 Dart 语言"],
+          "resources": [
+            {
+              "resource_name": "Flutter Official State Management Docs",
+              "resource_url": "https://docs.flutter.dev/data-and-backend/state-mgmt/simple",
+              "resource_type": "官方概念指南",
+              "reason": "清晰地解释了状态管理的核心概念，并简要介绍了多种方案，为后续学习具体库打下坚实的理论基础。"
+            },
+            {
+              "resource_name": "BLoC Library Official Documentation",
+              "resource_url": "https://bloclibrary.dev/",
+              "resource_type": "官方库文档与教程",
+              "reason": "BLoC是适合大型应用的结构化状态管理模式，其官网提供了从核心概念到最佳实践的完整教程，是不二之选。"
+            }
+          ]
+        },
+        {
+          "step": 15,
+          "skill": "与原生平台通信 (Platform Channels)",
+          "prerequisites": ["Flutter 框架与 Dart 语言"],
+          "resources": [
+            {
+              "resource_name": "Flutter Docs - Platform Channels",
+              "resource_url": "https://docs.flutter.dev/platform-integration/platform-channels",
+              "resource_type": "官方权威教程",
+              "reason": "学习Flutter与原生代码通信的最权威资源，通过一个完整示例清晰展示了如何在Dart和原生端(Swift/Kotlin)编写通信代码。"
+            }
+          ]
+        },
+        {
+          "step": 16,
+          "skill": "应用商店发布流程",
+          "prerequisites": [],
+          "resources": [
+            {
+              "resource_name": "App Store Connect Help",
+              "resource_url": "https://help.apple.com/app-store-connect/",
+              "resource_type": "官方帮助文档",
+              "reason": "在苹果App Store发布和管理应用的最权威指南，详细说明了从创建到提交审核的每一个步骤。"
+            },
+            {
+              "resource_name": "Google Play Console Help",
+              "resource_url": "https://support.google.com/googleplay/android-developer/",
+              "resource_type": "官方帮助文档",
+              "reason": "Google Play商店的官方指南，涵盖应用发布、测试、商品详情、政策合规等所有管理任务。"
+            },
+            {
+              "resource_name": "fastlane",
+              "resource_url": "https://fastlane.tools/",
+              "resource_type": "自动化工具与文档",
+              "reason": "开源工具集，可以自动化所有繁琐的发布任务（截图、证书、上传等），是专业移动端开发者提升效率的必备技能。"
+            }
+          ]
+        },
+        {
+          "step": 17,
+          "skill": "移动端 CI/CD (Codemagic 或 GitHub Actions)",
+          "prerequisites": [],
+          "resources": [
+            {
+              "resource_name": "Codemagic Documentation",
+              "resource_url": "https://docs.codemagic.io/",
+              "resource_type": "官方工具文档",
+              "reason": "专为移动应用设计的CI/CD平台，文档友好，提供了大量预设工作流，可以快速实现自动化构建、测试和发布。"
+            },
+            {
+              "resource_name": "GitHub Actions Documentation",
+              "resource_url": "https://docs.github.com/en/actions",
+              "resource_type": "官方平台文档",
+              "reason": "目前最主流的CI/CD解决方案之一，结合社区提供的actions，可以为iOS/Android搭建功能强大的自动化流程。"
+            }
+          ]
+        },
+        {
+          "step": 18,
+          "skill": "应用分析与崩溃监控 (Firebase / Sentry)",
+          "prerequisites": [],
+          "resources": [
+            {
+              "resource_name": "Firebase Crashlytics Documentation",
+              "resource_url": "https://firebase.google.com/docs/crashlytics",
+              "resource_type": "官方工具文档",
+              "reason": "Google提供的核心崩溃报告工具，官方文档提供了在各平台集成的详细步骤，是保障应用稳定性的首选。"
+            },
+            {
+              "resource_name": "Sentry for Mobile Documentation",
+              "resource_url": "https://docs.sentry.io/platforms/mobile/",
+              "resource_type": "官方工具文档",
+              "reason": "业界领先的错误和性能监控平台，在错误上下文追踪、性能监控方面功能更强大，适合进行更深入的性能分析。"
             }
           ]
         }
